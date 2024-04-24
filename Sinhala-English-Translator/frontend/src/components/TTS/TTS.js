@@ -45,13 +45,21 @@ function TTS() {
 
   return (
     <div>
-      <img src={logo} width="420" height="90" style={{ marginLeft: 130 }} />
+      <div className="heading-1">
+       <h1 className="top-heading">
+              Text &nbsp;
+          <span style={{ color: "#368728", borderBottom: "2px solid #368728" }}>
+            To Speech
+          </span>
+        </h1>
       <br></br>
       <textarea
         placeholder="Type here..."
         className="input-textarea" // Adding class name to textarea
         value={inputText}
         onChange={handleInputChange}
+        rows={5}
+        cols={50}
       />
       <br></br>
       <button className="btn" onClick={handleSpeak}>
@@ -65,6 +73,7 @@ function TTS() {
       <button className="btn" onClick={handleDownload}>
         Download
       </button>
+      </div>
     </div>
   );
 }

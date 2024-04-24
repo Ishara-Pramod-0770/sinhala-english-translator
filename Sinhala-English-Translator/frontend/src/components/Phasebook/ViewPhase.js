@@ -130,6 +130,7 @@ class ViewPhase extends Component {
   
     return (
       <div className="container">
+        <div className='container-1'>
         <Header />
         <br></br>
         <br></br>
@@ -204,6 +205,7 @@ class ViewPhase extends Component {
             </div>
           </div>
         )}
+        </div>
       </div>
     );
   }

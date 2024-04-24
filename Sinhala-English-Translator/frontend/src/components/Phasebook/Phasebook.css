@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -113,6 +112,10 @@ label{
 .container {
   text-align: center;
   padding: 20px;
+  /* margin-bottom: 180px; */
+}
+.container-1{
+  margin-bottom: 480px;
 }
 
 .top-heading {

@@ -51,7 +51,14 @@ export default function STT() {
 
   return (
     <div>
-      <img src={logo} width="420" height="90" style={{marginLeft : 130}}/><br></br>
+      <div className="heading-1">
+              <h1 className="top-heading">
+              Speech &nbsp;
+          <span style={{ color: "#368728", borderBottom: "2px solid #368728" }}>
+            To text
+          </span>
+        </h1>
+        
       <textarea
         className="input-textarea"
         value={transcript}
@@ -68,6 +75,7 @@ export default function STT() {
         Copy Text
       </button>
       <p>{transcript}</p>
+      </div>
     </div>
   );
 }

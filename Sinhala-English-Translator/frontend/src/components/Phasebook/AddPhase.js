@@ -63,7 +63,7 @@ class AddPhase extends Component {
     return (
       <div className="notepad-container">
         <Header />
-        <Link to="/" className="back-btn">
+        <Link to="/viewphasebook" className="back-btn">
           View Notes
         </Link>
 

@@ -1,0 +1,29 @@
+.input-textarea{
+    background-color: #252b3d;
+    width : 600px !important;
+    height : 233px;
+    margin-top : 30px;
+    font-size: 18px;
+    margin-bottom : 10px;
+}
+.btn {
+        background-color: #368728;
+        color: #ffffff;
+}
+.stop-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    height: 38px;
+    width: 60px;
+    border-radius: 5px;
+    /* margin-right : 10px; */
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .stop-btn:hover {
+    background-color: darkred;
+    outline: none;
+  }
+  

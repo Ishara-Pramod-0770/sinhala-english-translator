@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 const Navbar = () => {
   return (
@@ -66,9 +68,21 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button type="button" class="btn btn-secondary btn-sm">
-          Login / SignUp
-        </button>
+        <Stack spacing={2} direction="row">
+          <Button variant="text" style={{ color: "#2E7D32", outline: "none" }}>
+            <Link to={"/login"} style={{ color: "white"}}>Login</Link>
+          </Button>
+          <Button
+            variant="contained"
+            style={{
+              backgroundColor: "#2E7D32",
+              color: "white",
+              outline: "none",
+            }}
+          >
+            <Link to={"/signup"} style={{ color: "white"}}>SignUp</Link>
+          </Button>
+        </Stack>
       </div>
     </nav>
   );
